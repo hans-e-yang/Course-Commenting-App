@@ -12,9 +12,9 @@ function CourseList({onCourseSelected}) {
         <div>
             {courses.map(course => (
                 <button 
-                    onClick={()=>{onCourseSelected(course.name)}} 
-                    key={course.name}>
-                        {course.name}
+                    onClick={()=>{onCourseSelected(course)}} 
+                    key={course.code}>
+                        {course.code}
                 </button>
             ))}
         </div>
